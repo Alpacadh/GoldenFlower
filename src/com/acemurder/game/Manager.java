@@ -96,7 +96,7 @@ public class Manager {
         }
 
 
-        Collections.shuffle(tempPlayers);
+        Collections.shuffle(tempPlayers);//
 
         int round = 0;
         System.out.println("第" + time + "局游戏开始：游戏人数：" + tempPlayers.size());
@@ -183,7 +183,7 @@ public class Manager {
         Collections.sort(handCards);
         int value = 0;
         if (isPair(handCards)) {
-            if (handCards.get(0).getPoint().num == handCards.get(0).getPoint().num)
+            if (handCards.get(0).getPoint().num == handCards.get(1).getPoint().num)
                 value += handCards.get(0).getPoint().num * 10000
                         + handCards.get(0).getPoint().num * 100
                         + handCards.get(2).getPoint().num;
